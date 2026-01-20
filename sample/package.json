@@ -5,11 +5,11 @@
     "dev": "gasup --watch"
   },
   "dependencies": {
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.19",
     "gasup": "file:.."
   },
   "devDependencies": {
-    "@types/node": "^24.0.6"
+    "@types/node": "^25.0.9"
   },
   "pnpm": {
     "overrides": {
