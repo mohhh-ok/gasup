@@ -40,7 +40,8 @@
   "pnpm": {
     "overrides": {
       "tsx>esbuild": "0.25.5",
-      "esbuild-gas-plugin>esbuild": "0.25.5"
+      "esbuild-gas-plugin>esbuild": "0.25.5",
+      "defu": ">=6.1.5"
     }
   }
 }
