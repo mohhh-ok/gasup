@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import { Config } from './types.js';
 
-export async function bundle(config: Config, watch = false) {
+export async function bundle(config: Required<Config>, watch = false) {
   const { appsScriptJsonPath, entryPoint, outputFile } = config;
 
   const bundleEntries = [entryPoint];
@@ -41,7 +41,7 @@ export async function bundle(config: Config, watch = false) {
   }
 }
 
-function copyFiles(config: Config) {
+function copyFiles(config: Required<Config>) {
   const { appsScriptJsonPath, entryPoint, outputFile } = config;
   const distDir = path.dirname(outputFile);
 

@@ -5,18 +5,19 @@ import { Config } from './types.js';
 
 const configFileName = 'gasup.config.ts';
 
-export const defaultConfig: Config = {
+export const defaultConfig: Required<Config> = {
   entryPoint: 'src/index.ts',
   outputFile: 'dist/bundle.js',
   appsScriptJsonPath: 'appsscript.json',
 };
 
-export async function loadConfigWithDefault() {
+export async function loadConfigWithDefault(): Promise<Required<Config>> {
   const configPath = path.join(process.cwd(), configFileName);
   const config = await loadConfig(configPath);
   return {
-    ...defaultConfig,
-    ...config,
+    entryPoint: config.entryPoint ?? defaultConfig.entryPoint,
+    outputFile: config.outputFile ?? defaultConfig.outputFile,
+    appsScriptJsonPath: config.appsScriptJsonPath ?? defaultConfig.appsScriptJsonPath,
   };
 }
 
