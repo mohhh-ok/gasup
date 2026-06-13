@@ -28,7 +28,7 @@
     "google apps script"
   ],
   "dependencies": {
-    "commander": "^14.0.3",
+    "commander": "^15.0.0",
     "esbuild": "^0.28.1",
     "esbuild-gas-plugin": "^0.10.0"
   },
