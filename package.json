@@ -27,6 +27,9 @@
     "cli",
     "google apps script"
   ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "dependencies": {
     "commander": "^15.0.0",
     "esbuild": "^0.28.2",
