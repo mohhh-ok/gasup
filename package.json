@@ -36,7 +36,7 @@
     "esbuild-gas-plugin": "^0.10.0"
   },
   "devDependencies": {
-    "@types/node": "^26.2.0",
+    "@types/node": "^26.4.0",
     "release-it": "^21.0.2",
     "typescript": "^7.0.2"
   },
